@@ -1,0 +1,59 @@
+ERROR - 2023-11-28 15:22:41 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'catalogosWeb', 3306, '', 0)
+#1 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vi...', Array, false)
+#4 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\app\Controllers\UsuariosController.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(919): App\Controllers\UsuariosController->insertar()
+#6 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+#7 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vi...', Array, false)
+#3 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\app\Controllers\UsuariosController.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(919): App\Controllers\UsuariosController->insertar()
+#5 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+#6 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#9 {main}
+CRITICAL - 2023-11-28 15:22:41 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `visitante` (`correo_electronico`, `nombre_usuario`, `contrasena`) VALUES (:correo_electronico:, :nombre_usuario:, :contrasena:)', [...], false)
+ 3 APPPATH\Controllers\UsuariosController.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+ERROR - 2023-11-28 15:23:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`catalogosweb`.`visitante`, CONSTRAINT `visitante_ibfk_1` FOREIGN KEY (`perfil`) REFERENCES `perfiles` (`id_perfil`)) in D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `vi...', 0)
+#1 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `vi...')
+#2 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `vi...')
+#3 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `vi...', Array, false)
+#4 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\app\Controllers\UsuariosController.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(919): App\Controllers\UsuariosController->insertar()
+#6 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+#7 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#10 {main}
+CRITICAL - 2023-11-28 15:23:51 --> Cannot add or update a child row: a foreign key constraint fails (`catalogosweb`.`visitante`, CONSTRAINT `visitante_ibfk_1` FOREIGN KEY (`perfil`) REFERENCES `perfiles` (`id_perfil`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `visitante` (`correo_electronico`, `nombre_usuario`, `contrasena`) VALUES (:correo_electronico:, :nombre_usuario:, :contrasena:)', [...], false)
+ 2 APPPATH\Controllers\UsuariosController.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->insertar()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')

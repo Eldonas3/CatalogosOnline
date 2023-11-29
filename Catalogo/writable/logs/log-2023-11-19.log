@@ -1,0 +1,48 @@
+CRITICAL - 2023-11-19 01:38:49 --> Array to string conversion
+in APPPATH\Views\visitante\MostrarCatalogo.php on line 7.
+ 1 APPPATH\Views\visitante\MostrarCatalogo.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\MostrarCatalogo.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\MostrarCatalogo.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('visitante/MostrarCatalogo', [], true)
+ 5 APPPATH\Controllers\VisitanteController.php(24): view('visitante/MostrarCatalogo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\VisitanteController->consultarCatalogo()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VisitanteController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+CRITICAL - 2023-11-19 01:41:17 --> Array to string conversion
+in APPPATH\Views\visitante\MostrarCatalogo.php on line 7.
+ 1 APPPATH\Views\visitante\MostrarCatalogo.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\MostrarCatalogo.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\MostrarCatalogo.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('visitante/MostrarCatalogo', [], true)
+ 5 APPPATH\Controllers\VisitanteController.php(24): view('visitante/MostrarCatalogo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\VisitanteController->consultarCatalogo()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VisitanteController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+CRITICAL - 2023-11-19 01:42:33 --> Array to string conversion
+in APPPATH\Views\visitante\MostrarCatalogo.php on line 8.
+ 1 APPPATH\Views\visitante\MostrarCatalogo.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\MostrarCatalogo.php', 8)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\MostrarCatalogo.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('visitante/MostrarCatalogo', [], true)
+ 5 APPPATH\Controllers\VisitanteController.php(24): view('visitante/MostrarCatalogo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\VisitanteController->consultarCatalogo()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VisitanteController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+CRITICAL - 2023-11-19 01:43:41 --> Array to string conversion
+in APPPATH\Views\visitante\MostrarCatalogo.php on line 7.
+ 1 APPPATH\Views\visitante\MostrarCatalogo.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\MostrarCatalogo.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\MostrarCatalogo.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('visitante/MostrarCatalogo', [], true)
+ 5 APPPATH\Controllers\VisitanteController.php(24): view('visitante/MostrarCatalogo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\VisitanteController->consultarCatalogo()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VisitanteController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
