@@ -1,0 +1,362 @@
+INFO - 2023-11-30 01:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-30 04:05:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Beto' at line 5 in D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.nombre...', 0)
+#1 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.nombre...')
+#2 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.nombre...')
+#3 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\app\Controllers\VisitanteController.php(21): CodeIgniter\Database\BaseConnection->query('select p.nombre...')
+#4 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(919): App\Controllers\VisitanteController->consultarCatalogo()
+#5 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VisitanteController))
+#6 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\system\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\...')
+#9 {main}
+CRITICAL - 2023-11-30 04:05:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Beto' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\VisitanteController.php(21): CodeIgniter\Database\BaseConnection->query('select p.nombre_producto,p.descripcion,p.precio,ct.nombre_categoria,v.nombre_usuario,v.telefono,v.correo_electronico,p.stock 
+        from producto as p left join catalogo as c 
+        on p.catalogo = c.id_catalogo left join categoria as ct
+        on p.categoria = ct.id_categoria left join vendedor as v
+        on c.vendedor = v.id_vendedor where c.nombre_catalogo =Pasteleria Beto')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\VisitanteController->consultarCatalogo()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VisitanteController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:29:43 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Views\visitante\home_visitante.php on line 7.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 4 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:35:12 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Views\visitante\home_visitante.php on line 7.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 4 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:35:57 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Views\visitante\home_visitante.php on line 7.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 4 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:36:11 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Views\visitante\home_visitante.php on line 7.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 4 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:36:33 --> Undefined variable $catalogos
+in APPPATH\Views\visitante\home_visitante.php on line 28.
+ 1 APPPATH\Views\visitante\home_visitante.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catalogos', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 5 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:40:09 --> Undefined variable $catalogos
+in APPPATH\Views\visitante\home_visitante.php on line 29.
+ 1 APPPATH\Views\visitante\home_visitante.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catalogos', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 5 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:44:40 --> Undefined variable $catalogos
+in APPPATH\Views\visitante\home_visitante.php on line 29.
+ 1 APPPATH\Views\visitante\home_visitante.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catalogos', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 5 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:45:13 --> Undefined variable $catalogos
+in APPPATH\Views\visitante\home_visitante.php on line 22.
+ 1 APPPATH\Views\visitante\home_visitante.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catalogos', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php', 22)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 5 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:46:55 --> The route for "/usuarios/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/usuarios/login')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Views\visitante\home_visitante.php(10): redirect('/usuarios/login', 'refresh')
+ 4 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('visitante/home_visitante', [], true)
+ 7 APPPATH\Controllers\VisitanteController.php(51): view('visitante/home_visitante', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\VisitanteController->mostrarCatalogos()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VisitanteController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:47:51 --> The route for "usuarios/log" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('usuarios/log')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Views\visitante\home_visitante.php(10): redirect('usuarios/log', 'refresh')
+ 4 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('visitante/home_visitante', [], true)
+ 7 APPPATH\Controllers\VisitanteController.php(51): view('visitante/home_visitante', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\VisitanteController->mostrarCatalogos()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VisitanteController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:47:59 --> The route for "/usuarios/log" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/usuarios/log')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Views\visitante\home_visitante.php(10): redirect('/usuarios/log', 'refresh')
+ 4 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('visitante/home_visitante', [], true)
+ 7 APPPATH\Controllers\VisitanteController.php(51): view('visitante/home_visitante', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\VisitanteController->mostrarCatalogos()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VisitanteController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:48:07 --> The route for "/usuarios/login" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/usuarios/login')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Views\visitante\home_visitante.php(10): redirect('/usuarios/login', 'refresh')
+ 4 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('visitante/home_visitante', [], true)
+ 7 APPPATH\Controllers\VisitanteController.php(51): view('visitante/home_visitante', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\VisitanteController->mostrarCatalogos()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VisitanteController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:49:48 --> Undefined variable $catalogos
+in APPPATH\Views\visitante\home_visitante.php on line 29.
+ 1 APPPATH\Views\visitante\home_visitante.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catalogos', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 5 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:54:10 --> Undefined variable $catalogos
+in APPPATH\Views\visitante\home_visitante.php on line 29.
+ 1 APPPATH\Views\visitante\home_visitante.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catalogos', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 5 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 04:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 04:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 04:58:44 --> Invalid file: "/visitante/home_visitante/mostrarCatalogos.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/visitante/home_visitante/mostrarCatalogos.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante/mostrarCatalogos', [], true)
+ 3 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante/mostrarCatalogos')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 05:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 05:01:03 --> Undefined variable $catalogos
+in APPPATH\Views\visitante\home_visitante.php on line 29.
+ 1 APPPATH\Views\visitante\home_visitante.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catalogos', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 5 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 05:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 05:01:33 --> view(): Argument #2 ($data) must be of type array, bool given, called in D:\Universidad\TEC\Semestre V\Desarrollo de aplicaciones web\Catalogo\Catalogo\app\Controllers\UsuariosController.php on line 126
+in SYSTEMPATH\Common.php on line 1176.
+ 1 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante', false)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 05:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 05:52:40 --> Call to undefined function App\Controllers\VisitanteController()
+in APPPATH\Controllers\UsuariosController.php on line 126.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 06:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 06:00:16 --> Call to undefined function App\Controllers\mostrarCatalogos()
+in APPPATH\Controllers\UsuariosController.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 06:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 06:03:32 --> Undefined variable $catalogos
+in APPPATH\Views\visitante\home_visitante.php on line 29.
+ 1 APPPATH\Views\visitante\home_visitante.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $catalogos', 'D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\app\\Views\\visitante\\home_visitante.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('/visitante/home_visitante', [], true)
+ 5 APPPATH\Controllers\UsuariosController.php(126): view('/visitante/home_visitante')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UsuariosController->ingresar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Universidad\\TEC\\Semestre V\\Desarrollo de aplicaciones web\\Catalogo\\Catalogo\\public\\index.php')
+INFO - 2023-11-30 06:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 06:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 07:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 07:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 07:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 07:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 07:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 08:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 09:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 09:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 09:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

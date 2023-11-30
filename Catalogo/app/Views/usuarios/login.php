@@ -1,3 +1,11 @@
+<?php $session =  \Config\Services::session();
+
+if($session->get('logged_in') == TRUE){
+    $session->destroy();
+    print "Wey no hay sesión ni le muevas";
+}
+
+?>
 <div class="container">
     <div class="row">
         <div class="col"></div>

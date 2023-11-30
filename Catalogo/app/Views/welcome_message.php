@@ -25,21 +25,26 @@
           <li class="nav-item">
           <a class="nav-link" href="<?= base_url('usuarios/registro'); ?>">Registrarse</a>
           </li>
+          <li class="nav-item">
+          <a class="nav-link" href="<?= base_url('usuarios/login'); ?>">Entrar</a>
+          </li>
         </ul>
       </form>
     </div>
   </div>
 </nav>
+
+<div class="container-sm">
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.happy-desserts.com%2Fwp-content%2Fuploads%2F2021%2F04%2Flila2.jpg&f=1&nofb=1&ipt=9c7dc349d2828d06393aef408a696644d81adad4e041e39c0a25d43e23e78a56&ipo=images" class="d-block w-100" alt="...">
+      <img src="<?= base_url('Pastel de Durazno.png') ?>" class="d-block w-62" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.happy-desserts.com%2Fwp-content%2Fuploads%2F2021%2F04%2Flila2.jpg&f=1&nofb=1&ipt=9c7dc349d2828d06393aef408a696644d81adad4e041e39c0a25d43e23e78a56&ipo=images" class="d-block w-100" alt="...">
+      <img src="Pastel de moras.png" class="d-block w-62" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.happy-desserts.com%2Fwp-content%2Fuploads%2F2021%2F04%2Flila2.jpg&f=1&nofb=1&ipt=9c7dc349d2828d06393aef408a696644d81adad4e041e39c0a25d43e23e78a56&ipo=images" class="d-block w-100" alt="...">
+      <img src="Pastel de Tres leches.png" class="d-block w-62" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -52,6 +57,7 @@
   </button>
 </div>
 
+</div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <h4 id="conocenos">¿Quienes somos?</h4>

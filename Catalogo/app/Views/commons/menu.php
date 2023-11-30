@@ -24,18 +24,9 @@
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-          <a class="nav-link" href="#">Salir</a>
-          </li>
-        </ul>
+      <form action="<?= base_url('/usuarios/cerrar_sesion') ?>" method = "GET" class="d-flex" role="search">
+        <button class="btn btn-outline-danger" type="submit">Cerrar</button>
       </form>
     </div>
   </div>

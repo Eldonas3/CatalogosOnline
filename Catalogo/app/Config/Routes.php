@@ -7,12 +7,15 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/visitante/MostrarCatalogo','VisitanteController::consultarCatalogo');
-$routes->get('/visitante','VisitanteController::mostrarProductos');
+$routes->post('/visitante/MostrarCatalogo','VisitanteController::consultarCatalogo');
+$routes->get('/visitante/home_visitante','VisitanteController::mostrarCatalogos');
 
 $routes->get('/usuarios/login','UsuariosController::log');
 $routes->get('/usuarios/registro','UsuariosController::index');
 $routes->post('/usuarios/registro','UsuariosController::registrar_usuario');
 $routes->post('/usuarios/login','UsuariosController::ingresar');
-// $routes->post('/usuarios/registro','UsuariosController::insertar');
+//metodo para cerrar sesion
+$routes->get('/usuarios/cerrar_sesion','UsuariosController::cerrar_sesion');
 
-$routes->get('/visitante/Prueba','VisitanteController::consultarCatalogo');
+//rutas vendedor
+$routes->get('/vendedor/crearCatalogo','VendedorController::crearCatalogo');
